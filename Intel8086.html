@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>INTEL 8086</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script type="text/javascript" src="../Intel/script/script.js"></script>
+    </head>
+        <body>
+            <div class="container">
+                <H1>INTEL 8086</H1>
+                <table>
+                    <th>Tablica rejestrów</th>
+                        <tr>
+                            <td>Ax</td>
+                            <td>AH</td>
+                            <td><input type="number" min="0" max="255" id="inputAH"></td>
+                            <td>AL</td>
+                            <td><input type="number" min="0" max="255" id="inputAL"></td>
+                        </tr>
+                        <tr>
+                            <td>Bx</td>
+                            <td>BH</td>
+                            <td><input type="number" min="0" max="255" id="inputBH"></td>
+                            <td>BL</td>
+                            <td><input type="number" min="0" max="255" id="inputBL"></td>
+                        </tr>
+                        <tr>
+                            <td>Cx</td>
+                            <td>CH</td>
+                            <td><input type="number" min="0" max="255" id="inputCH"></td>
+                            <td>CL</td>
+                            <td><input type="number" min="0" max="255" id="inputCL"></td>
+                        </tr>
+                        <tr>
+                            <td>Dx</td>
+                            <td>DH</td>
+                            <td><input type="number" min="0" max="255" id="inputDH"></td>
+                            <td>DL</td>
+                            <td><input type="number" min="0" max="255" id="inputDL"></td>
+                        </tr>
+                </table>
+            </br>
+                <div class="select">
+                    <div class="from"> Z 
+                        <select>
+                            <option value="AH">AH</option>
+                            <option value="AL">AL</option>
+                            <option value="BH">BH</option>
+                            <option value="BL">BL</option>
+                            <option value="CH">CH</option>
+                            <option value="CL">CL</option>
+                            <option value="DH">DH</option>
+                            <option value="DL">DL</option>
+                        </select>
+                    </div>
+                    <div calss="to"> DO 
+                        <select>
+                            <option value="AH">AH</option>
+                            <option value="AL">AL</option>
+                            <option value="BH">BH</option>
+                            <option value="BL">BL</option>
+                            <option value="CH">CH</option>
+                            <option value="CL">CL</option>
+                            <option value="DH">DH</option>
+                            <option value="DL">DL</option>
+                        </select>
+                    </div>
+                </br>
+                </div>  
+                <table>
+                    <th>Rozkazy</th>
+                        <td><button onclick="myFunction()">MOV</button></td>
+                        <td><button onclick="myFunction()">XCHG</button></td>
+                        <td><button onclick="myFunction()">CLEAR</button></td>
+                </table>
+                <div class="author">Kamil Zgórkiewicz 12551 Informatyka i ekonometria lab14/1/IEN konwZ</div>
+            </div>
+        </body>
+</html>
