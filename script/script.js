@@ -1,5 +1,33 @@
-function myFunction() {
-    alert("kek");
-    document.getElementById("demo1").innerHTML = "Hello Dolly!";
-    document.getElementById("demo2").innerHTML = "How are you?";
+function MOV() {
+  var z = document.getElementById("from");
+  var zoption = z.options[z.selectedIndex].value;
+
+  var d = document.getElementById("to");
+  var doption = d.options[d.selectedIndex].value;
+
+  var first = document.getElementById(zoption).value;
+  document.getElementById(zoption).value = "";
+  document.getElementById(doption).value = first;
+}
+
+function XCHG() {
+  var z = document.getElementById("from");
+  var zoption = z.options[z.selectedIndex].value;
+
+  var d = document.getElementById("to");
+  var doption = d.options[d.selectedIndex].value;
+
+  var first = document.getElementById(zoption).value;
+  var second = document.getElementById(doption).value;
+  document.getElementById(zoption).value = second;
+  document.getElementById(doption).value = first;
+}
+
+function CLEAR() {
+  var elements = document.getElementsByTagName("input");
+  for (var ii = 0; ii < elements.length; ii++) {
+      if (elements[ii].type == "number") {
+          elements[ii].value = "";
+      }
   }
+}
